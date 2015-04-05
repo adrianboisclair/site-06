@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script type="text/javascript">
+
+    function yHandler() {
+        var wrap = document.getElementById('wrap');
+        var contentHeight = wrap.offsetHeight;
+        var yOffset = window.pageYOffset;
+        var y = yOffset + window.innerHeight;
+        if (y >= contentHeight) {
+            //ajax call
+            for ( var i = 0; i < 10; i++) {
+                wrap.innerHTML += '<div class="newData">' +
+                '</div>';
+            }
+        }
+        var status = document.getElementById('status');
+        status.innerHTML = contentHeight+" | "+y;
+        console.log(yOffset);
+    }
+    window.onscroll =  yHandler;
+
+</script>
+
+<style type="text/css">
+
+    div#status {
+        position: fixed;
+        font-size: 24px;
+    }
+    div#wrap {
+        width: 800px;
+        margin: 0 auto;
+    }
+    div.newData {
+        height:2000px;
+        background: #09F;
+        margin: 10px 0;
+    }
+
+</style>
+
+<body>
+<div id="status">0 | 0</div>
+<div id="wrap">
+
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, amet, aspernatur, consequatur
+            corporis excepturi explicabo maiores numquam officiis perferendis praesentium saepe soluta
+            tenetur
+            velit. Dolores eos ipsa neque sint temporibus!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur assumenda, aut
+            beatae
+            ducimus eum fugiat, id impedit minus quos rerum tenetur unde veniam! Amet libero molestiae
+            numquam
+            voluptate voluptates.</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consectetur consequuntur
+            dolor
+            dolorem eligendi harum ipsum labore natus neque nulla, obcaecati odit officiis omnis placeat
+            quasi
+            rem vel voluptatum!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dolores enim, esse eveniet
+            excepturi
+            labore nobis provident quibusdam quidem quis reiciendis repellendus, reprehenderit rerum
+            suscipit
+            vitae voluptatem voluptates. Culpa, quaerat?</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+    <article>
+        <h1>
+            Article Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+            dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+            recusandae sequi sunt suscipit totam veniam!</p>
+    </article>
+
+</div>
+
+
+</body>
+</html>

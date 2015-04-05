@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div.contentbox {
+            background: #FFF;
+            height: 90vh;
+            margin: 20px;
+            font-size: 28px;
+            border: #CCC 1px dashed;
+        }
+    </style>
+    <script src="js/autoScrollTo.js"></script>
+</head>
+<body>
+<h2 id="myheading">JavaScript Smooth Animated Auto Scroll</h2>
+<a href="#" onclick="return false;" onmousedown="autoScrollTo('div1');">Document Section 1</a>
+<a href="#" onclick="return false;" onmousedown="autoScrollTo('div2');">Document Section 2</a>
+<a href="#" onclick="return false;" onmousedown="autoScrollTo('div3');">Document Section 3</a>
+<a href="#" onclick="return false;" onmousedown="autoScrollTo('div4');">Document Section 4</a>
+
+<div id="div1" class="contentbox">Div 1 content...</div>
+<a href="#" onclick="return false;" onmousedown="resetScroller('myheading');">Go To Top</a>
+
+<div id="div2" class="contentbox">Div 2 content...</div>
+<a href="#" onclick="return false;" onmousedown="resetScroller('myheading');">Go To Top</a>
+
+<div id="div3" class="contentbox">Div 3 content...</div>
+<a href="#" onclick="return false;" onmousedown="resetScroller('myheading');">Go To Top</a>
+
+<div id="div4" class="contentbox">Div 4 content...</div>
+<a href="#" onclick="return false;" onmousedown="resetScroller('myheading');">Go To Top</a>
+</body>
+</html>

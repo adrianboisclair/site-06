@@ -1,0 +1,338 @@
+/* Main Structure */
+
+body::-webkit-scrollbar-track {
+    border: 1px solid black;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrap {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    display: block;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+h1 {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+/* Header & Nav */
+header {
+    background-color: rgba(255, 255, 255, .75);
+    display: flex;
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    padding-top: 50px;
+    transition: height 0.2s linear 0.2s, padding 0.2s linear 0s;
+    overflow: hidden;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar a {
+    font-family: "Roboto Slab", sans-serif;
+    color: #000000;
+    transition: height 0.3s linear 0.3s, color .1s ease-in-out;
+    margin: .25em .5em;
+    padding: .25em .5em;
+    text-decoration: none;
+    /*font-size: 20px;*/
+
+}
+
+.nav-bar a:hover {
+    color: dodgerblue;
+}
+
+#nav-nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Roboto Slab", sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 300;
+    font-size: 35px;
+    padding: .5em;
+    color: darkslategray;
+    transition: font-size .2s;
+
+}
+
+/* Flex-Containers */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tag-line {
+    background-color: #f5f5f5;
+    height: 125px;
+    margin-bottom: 2em;
+}
+
+/* Sections */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    height: 2.5em;
+    width: 10em;
+    border-radius: .5em;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto Slab", sans-serif;
+    transition: background-color .2s ease-in-out;
+    transition-delay: initial;
+    margin-left: 1em;
+}
+
+.link-btn:hover {
+    background-color: #0074D9;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 20px;
+    color: darkslategray;
+    text-transform: uppercase;
+}
+
+section.module p {
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+section.module p:last-child {
+    margin-bottom: 0;
+}
+
+section.module.content {
+    padding-bottom: 40px;
+}
+
+section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section.module.parallax h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    line-height: 600px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+    background: url("../img/highfashion.jpg") 100% 100% no-repeat;
+    background-size: cover;
+}
+
+/* Articles */
+article {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.container.blog-articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.featured-articles {
+    display: flex;
+    justify-content: center;
+    width: 960px;
+}
+
+.featured-articles article {
+    display: flex;
+    flex-grow: 1;
+    max-width: 200px;
+    min-width: 200px;
+    height: 300px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: outset 1px lightgray;
+
+}
+
+.blog-articles {
+    margin-top: 2em;
+}
+
+.blog-articles article {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20em;
+    /*max-width: 35em;*/
+    max-height: 30em;
+    /*min-height: 18em;*/
+    margin: .5em;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+    background-color: rgb(245, 245, 245);
+    flex-wrap: wrap;
+    padding: 1em;
+    align-content: center;
+    overflow: hidden;
+
+}
+
+.blog-articles article h1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 28px;
+    margin-bottom: .5em;
+}
+
+.blog-articles article p {
+    font-family: "Roboto Slab", sans-serif;
+
+}
+
+.blog-entry {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20em;
+    /*max-width: 35em;*/
+    max-height: 30em;
+    /*min-height: 18em;*/
+    margin: .5em;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+    background-color: rgb(245, 245, 245);
+    flex-wrap: wrap;
+    padding: 1em;
+    align-content: center;
+    overflow: hidden;
+}
+
+.blog-entry img {
+    display: flex;
+    height: 100px;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+#datePosted {
+    font-size: smaller;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+#name {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+#article-1 {
+    background: url("http://lorempixel.com/500/500/city") 50% 50% no-repeat;
+}
+
+#article-2 {
+    background: url("http://lorempixel.com/g/500/500/transport") 50% 50% no-repeat;
+}
+
+#article-3 {
+    background: url("http://lorempixel.com/500/500/fashion") 50% 50% no-repeat;
+}
+
+#article-4 {
+    background: url("http://lorempixel.com/500/500/people") 50% 50% no-repeat;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 2em;
+}
+
+/*Media Query*/
+@media all and (min-width: 600px) {
+    section.module h2 {
+        font-size: 30px;
+    }
+
+    section.module p {
+        font-size: 20px;
+    }
+
+    section.module.parallax h1 {
+        font-size: 96px;
+    }
+}
+
+@media all and (min-width: 960px) {
+    /*section.module.parallax h1 {*/
+    /*font-size: 160px;*/
+    /*}*/
+}

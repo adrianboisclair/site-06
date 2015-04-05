@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<!--
+ This is a template site.  Everything in squar brackets, or [] will be replaced with the respected data.
+
+ Prior to reviewing this work please note that it us understood that the reader has at least some minimal
+ HTML, CSS, and JavaScript background.  That being said..
+
+
+ ---DO NOT FORGET---
+ if an element has a class...
+    ie. <div class="wrapper"></div>
+should you want to edit the element's appearance you must refer to the style.css file and find the .wrapper {...} entry.
+Remember the parents affect the children.
+
+MUST READ
+in order to understand this site user should be familiar with CSS FlexBox and it's properties and how if affects it's
+children.
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+-->
+<!--End Message-->
+<!--Document Head
+This is where we will put our meta tags, title, font imports, style imports, etc.
+
+*meta tags*
+important things to note:
+    name="viewport" - this ensures that, if viewed on a mobile device that the viewport will be the device screen size.
+-->
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="CelebrityFashion.info blog">
+    <meta name="keywords" content="Celebrity fashion trends kardashion styles">
+    <meta name="author" content="Adrian Boisclair">
+    <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1">
+    <title>[ENTER TITLE HERE]</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/reset.css">     <!-- Reset.css resets browser's default element styles -->
+    <link rel="stylesheet" href="assets/css/style.css">     <!-- Import main style AFTER the reset -->
+
+</head>
+
+
+<!-- getData() function starts the AJAX call to load blogger content -->
+<body onload="getData()">
+
+
+<!--
+Here we begin the site content beginning with a div of class wrapper, which has width=100% and margin=0.
+The header element has a class of nav-bar and an id header which gives it full width across the screen.
+-->
+
+<div class="wrapper">
+    <header class="nav-bar" id="header">
+        <div class="container flex-container" id="nav-nav-bar"><!-- this div holds all of our links-->
+            <div class="logo" id="logo">[SITE-LOGO]</div><!--Here is our logo-->
+            <a class="link" href="#">Home</a><!--Link1-->
+            <a class="link" href="#">About</a><!--Link2-->
+            <a class="link" href="#">Blog</a><!--Link3-->
+            <a class="link" href="#">Store</a><!--Link4-->
+            <a class="link" href="#">Forum</a><!--Link5-->
+        </div>
+    </header><!--End of the header-->
+    <main><!--Beginning of main content-->
+        <section class="module parallax parallax-1"></section><!-- This is the Parallax div and container -->
+        <section class="module content"><!-- This is the banner div and container -->
+            <div class="flex-container tag-line"><!-- This is the "tag line" div and container -->
+                <div class="wrap"><!-- wraps around content and aligns it properly -->
+                    <h2>[ENTER CLEVER TAG LINE HERE]</h2><!--Place your tag line here-->
+                    <a class="link-btn" href="#">[BUTTON]</a><!--Button (all links and buttons styled in CSS file)-->
+                </div><!--end of wrapper div-->
+            </div><!--end of tag-line container-->
+        </section><!--end of banner div section-->
+        <section class="wrapper flex-container"><!--Beginning of section to hold articles-->
+            <div class="flex-wrap featured-articles"><!-- These are the featured articles.  The image is set in the CSS -->
+                <article id="article-1">
+                </article>
+                <article id="article-2">
+                </article>
+                <article id="article-3">
+                </article>
+                <article id="article-4">
+                </article>
+            </div>
+        </section><!-- End of featured articles section -->
+        <section class="module content wrapper">
+            <div class="container blog-articles" id="myDiv"> <!-- This is the blog articles section -->
+                <article> <!-- Articles are dummy articles, which are filled in with real blog data in the blogger.js file -->
+                    <h1>
+                        Article Header
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, amet, aspernatur, consequatur
+                        corporis excepturi explicabo maiores numquam officiis perferendis praesentium saepe soluta
+                        tenetur
+                        velit. Dolores eos ipsa neque sint temporibus!</p>
+                </article>
+                <article>
+                    <h1>
+                        Article Header
+                    </h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur assumenda, aut
+                        beatae
+                        ducimus eum fugiat, id impedit minus quos rerum tenetur unde veniam! Amet libero molestiae
+                        numquam
+                        voluptate voluptates.</p>
+                </article>
+                <article>
+                    <h1>
+                        Article Header
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consectetur consequuntur
+                        dolor
+                        dolorem eligendi harum ipsum labore natus neque nulla, obcaecati odit officiis omnis placeat
+                        quasi
+                        rem vel voluptatum!</p>
+                </article>
+                <article>
+                    <h1>
+                        Article Header
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dolores enim, esse eveniet
+                        excepturi
+                        labore nobis provident quibusdam quidem quis reiciendis repellendus, reprehenderit rerum
+                        suscipit
+                        vitae voluptatem voluptates. Culpa, quaerat?</p>
+                </article>
+                <article>
+                    <h1>
+                        Article Header
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+                        dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+                        recusandae sequi sunt suscipit totam veniam!</p>
+                </article>
+                <article>
+                    <h1>
+                        Article Header
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores cum debitis
+                        dignissimos dolores, dolorum esse excepturi impedit inventore minus obcaecati perferendis quasi
+                        recusandae sequi sunt suscipit totam veniam!</p>
+                </article>
+            </div><!-- End of Blog Articles -->
+
+        </section>
+
+        <footer> <!-- footer -->
+
+            [PLACE FOOTER DATA HERE]
+        </footer>
+    </main>
+</div>
+
+<!-- Load the javascript -->
+<script src="assets/js/header.js" async></script>
+<script src="assets/js/blogger.js" async></script>
+</body>
+</html>
