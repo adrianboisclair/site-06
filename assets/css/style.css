@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 
 main {
     display: block;
-    background-color: #000000;
+    background-color: rgba(225, 225, 225, 0.91);
 }
 
 .container {
@@ -53,7 +53,7 @@ header {
     width: 100%;
     left: 0;
     top: 0;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
     align-items: center;
     padding-top: 50px;
     transition: height 0.2s linear 0.2s, padding 0.2s linear 0s;
@@ -76,7 +76,7 @@ header {
 }
 
 .nav-bar a:hover {
-    color: dodgerblue;
+    color: #89000b;
 }
 
 #nav-nav-bar {
@@ -263,7 +263,7 @@ article {
     margin: .5em;
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
-    background-color: rgb(245, 245, 245);
+    background-color: #b1b1b1;
     flex-wrap: wrap;
     padding: 1em;
     align-content: center;
