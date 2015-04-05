@@ -10,7 +10,7 @@ function getData() {
                 document.getElementById('myDiv').innerHTML = "<strong>Waiting for server response...</strong>"; // Set myDiv to display waiting message
             }
         };
-    xmlhttp.open("GET", "https://www.googleapis.com/blogger/v3/blogs/7030204873015617672/posts?key=AIzaSyDhWlM0FPbDaKtMbjL-mW8kfWsqZ5Mz6nE", true);
+    xmlhttp.open("GET", "https://www.googleapis.com/blogger/v3/blogs/5494086079662789679/posts?key=AIzaSyDhWlM0FPbDaKtMbjL-mW8kfWsqZ5Mz6nE", true);
     xmlhttp.send();
     function myFunction(arr) {
         //First we need to set the variables
