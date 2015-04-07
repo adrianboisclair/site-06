@@ -161,7 +161,6 @@ section.module p:last-child {
 section.module.content {
     padding-bottom: 40px;
 }
-
 section.module.parallax {
     height: 600px;
     background-position: 50% 50%;
@@ -172,9 +171,8 @@ section.module.parallax {
     -o-background-size: cover;
     background-size: cover;
 }
-
 section.module.parallax h1 {
-    color: rgba(0, 0, 0, 0.80);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 48px;
     line-height: 600px;
     font-weight: 700;
@@ -182,10 +180,9 @@ section.module.parallax h1 {
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 section.module.parallax-1 {
-    background: url("../img/tech2.jpg") 100% 100% no-repeat;
-    background-size: cover;
+    /*margin-top: 170px;*/
+    background-image: url("../img/tech2.jpg");
 }
 
 /* Articles */

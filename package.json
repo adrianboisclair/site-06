@@ -1,0 +1,16 @@
+{
+  "name": "nodejsproject",
+  "version": "1.0.0",
+  "description": "My first project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/christkv/myfirstproject.git"
+  },
+  "dependencies": {
+    "mongodb": "3.0.1",
+    "angularjs":""
+  },
+  "author": "Adrian Boisclair",
+  "license": "Copyright"
+}

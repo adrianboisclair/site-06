@@ -1,0 +1,29 @@
+
+<html ng-app="bloggerApp">
+<head>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script>
+        var bloggerApp = angular.module('bloggerApp', []);
+        bloggerApp.controller('BloggerCtrl', function ($scope, $http){
+            $http.get('https://www.googleapis.com/blogger/v3/blogs/3513037851722797981/posts?key=AIzaSyDhWlM0FPbDaKtMbjL-mW8kfWsqZ5Mz6nE').success(function(data) {
+                $scope.blogs = data;
+                console.log(data);
+            });
+        });
+    </script>
+</head>
+<body ng-controller="BloggerCtrl">
+<table>
+    <tr>
+        <th>Blogger</th>
+        <th>Posts</th>
+    </tr>
+    <tr ng-repeat="blog in blogs">
+        <td>{{blog.kind}}</td>
+        <td>{{blog.population}}</td>
+    </tr>
+</table>
+</body>
+</html>

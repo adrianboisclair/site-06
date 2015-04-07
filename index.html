@@ -62,7 +62,9 @@ The header element has a class of nav-bar and an id header which gives it full w
         </div>
     </header><!--End of the header-->
     <main><!--Beginning of main content-->
-        <section class="module parallax parallax-1"></section><!-- This is the Parallax div and container -->
+        <section class="module parallax parallax-1">
+            <div class="container"></div>
+        </section><!-- This is the Parallax div and container -->
         <section class="module content"><!-- This is the banner div and container -->
             <div class="flex-container tag-line"><!-- This is the "tag line" div and container -->
                 <div class="wrap"><!-- wraps around content and aligns it properly -->
@@ -86,7 +88,7 @@ The header element has a class of nav-bar and an id header which gives it full w
         <section class="module content wrapper">
             <div class="container blog-articles" id="myDiv"> <!-- This is the blog articles section -->
                 <article> <!-- Articles are dummy articles, which are filled in with real blog data in the blogger.js file -->
-                    <h1>
+                    <h1>  <!-- Also, these will only be seen in the document if the Blogger API Server is unresponsive -->
                         Article Header
                     </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, amet, aspernatur, consequatur

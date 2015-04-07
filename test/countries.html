@@ -1,0 +1,51 @@
+<html ng-app="contactApp">
+<head>
+    <meta charset="utf-8">
+    <title>Adrian's Contacts List in Angular.JS</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <style>
+        #contacts-table tr, #contacts-table tr th {
+            text-align: left;
+
+            /*padding: 1em;*/
+        }
+        #contacts-table tr th {
+            width: 200px;
+            /*height: 4em;*/
+        }
+        #allContacts {
+            height: 28px;
+        }
+        #allContacts td {
+            border-top: solid 1px gray;
+        }
+
+    </style>
+</head>
+<body ng-controller="ContactCtrl">
+
+Find a Contact:<input ng-model="query" type="text"/>
+<table id="contacts-table">
+    <tr>
+        <th><a href="" ng-click="sortField ='FIELD2'; reverse = !reverse">First Name</a></th>
+        <th><a href="" ng-click="sortField ='FIELD4'; reverse = !reverse">Last Name</a></th>
+        <th><a href="" ng-click="sortField = 'FIELD33'; reverse = !reverse">Phone Number</a></th>
+    </tr>
+    <tr id="allContacts" ng-repeat="contact in contacts | filter:query | orderBy:sortField:reverse">
+        <td>{{contact.FIELD2}}</td>
+        <td>{{contact.FIELD4}}</td>
+        <td>{{contact.FIELD33}}</td>
+    </tr>
+</table>
+<script>
+    var contactApp = angular.module('contactApp', []);
+    contactApp.controller('ContactCtrl', function ($scope, $http) {
+        $http.get('contacts.json').success(function (data) {
+            $scope.contacts = data;
+        });
+        $scope.sortField = 'FIELD2';
+        $scope.reverse = true;
+    });
+</script>
+</body>
+</html>
